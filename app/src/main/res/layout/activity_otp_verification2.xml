@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="25dp"
+    tools:context=".OTP_verificationActivity2">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Number Verify code"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginBottom="25dp"
+        android:text="Enter the code ve just send to your Phone number"
+        android:textColor="#8d90b0"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/verifynumber_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:hint="123 456"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifynumber_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn`t receive a code?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/resend_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btnshape"
+            android:backgroundTint="#1ACC21"
+            android:paddingHorizontal="5dp"
+            android:text="Resend"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifybtn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btnshape"
+        android:hint="Verify"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifybtn_id"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Email Verify code"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Enter the code ve just send to your Email"
+            android:textColor="#8d90b0"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/verifyemail_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="center"
+            android:hint="123 456"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn`t receive a code?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/email_resend_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btnshape"
+                android:backgroundTint="#1ACC21"
+                android:paddingHorizontal="5dp"
+                android:text="Resend"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/email_verifybtn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btnshape"
+            android:hint="Verify"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
